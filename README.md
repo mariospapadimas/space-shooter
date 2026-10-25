@@ -24,7 +24,7 @@ You have 10 lives — colliding with an enemy ship or meteor costs you a life (u
 ## Installation
 
 ### Prerequisites
-Make sure you have [Python 3.x](https://www.python.org/downloads/) and [Pygame](https://www.pygame.org) installed on your machine.
+Make sure you have [Python 3.9+](https://www.python.org/downloads/) and [Pygame](https://www.pygame.org) installed on your machine.
 
 ```bash
 pip install pygame
@@ -33,8 +33,8 @@ pip install pygame
 ### Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/mariospropapadimas-dev/SpaceShooterGame-Python.git
-   cd SpaceShooterGame-Python
+   git clone https://github.com/mariospapadimas/space-shooter.git
+   cd space-shooter
    ```
 2. Run the game:
    ```bash
@@ -43,7 +43,7 @@ pip install pygame
 
 ## Project Structure
 ```
-SpaceShooterGame-Python/
+space-shooter/
 ├── main.py         # Game loop, event handling, collisions, and HUD
 ├── player.py        # Player ship movement and rendering
 ├── enemy.py         # Enemy ship behavior
@@ -53,5 +53,23 @@ SpaceShooterGame-Python/
 ├── gamestate.py       # Score tracking and high score persistence
 ├── resources.py        # Shared image loading and screen configuration
 ├── assets/          # Sprites and background images
-└── highscore.txt       # Persisted high score
+├── highscore.txt       # Persisted high score
+├── README.md
+└── LICENSE             # MIT terms for owned code; see asset scope below
 ```
+
+
+Run from the repository root so `highscore.txt` is read and saved there.
+The only third-party Python dependency is Pygame; development verification used
+Python 3.11.9 and Pygame 2.6.1. No module renames or gameplay changes are needed.
+
+## License and asset rights
+
+Code owned by Marios Papadimas is licensed under the [MIT License](LICENSE).
+The copyright name follows the repository's existing author identity.
+
+The images in `assets/` and the README preview are excluded from this code license.
+Their original creators and redistribution terms have not been verified from the
+repository history; their presence here does not establish ownership or permission.
+Obtain the relevant permissions before reusing or distributing those materials.
+Pygame retains its own license. No replacement artwork has been downloaded.
